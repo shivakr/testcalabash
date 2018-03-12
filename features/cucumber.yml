@@ -1,0 +1,7 @@
+#Android
+<%android_common = "-r features/support -r features/android/support -r features/android/support/pages APP_PATH=resources/android.apk TEST_APP_PATH=testserver/"%>
+
+andorid: PLATFORM=android RESET_BETWEEN_SCENARIO=1 <%=andorid_common%> --tags @ifany   device=emulator-5554
+
+#iOS
+ios:
